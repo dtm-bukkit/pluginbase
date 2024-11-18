@@ -31,5 +31,13 @@ jobs:
       - name: Artifact output
         uses: actions/upload-artifact@v4
         with:
-          name: pluginbase-pr${{ github.event.pull_request.number }}
+          name: pluginbase-pr${{ github.event.pull_request.number }}-jars
           path: "**/build/libs/*-pr${{ github.event.pull_request.number }}.jar"
+
+      - name: Reports output
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: pluginbase-pr${{ github.event.pull_request.number }}-reports
+          path: "**/build/reports/**"

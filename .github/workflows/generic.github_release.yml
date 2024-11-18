@@ -86,3 +86,11 @@ jobs:
           file: "**/build/libs/*-${{ steps.release.outputs.publish_version }}.jar"
           file_glob: true
           tag: ${{ steps.release.outputs.tag_name }}
+
+      - name: Reports output
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: pluginbase-${{ steps.release.outputs.publish_version }}-reports
+          path: "**/build/reports/**"
