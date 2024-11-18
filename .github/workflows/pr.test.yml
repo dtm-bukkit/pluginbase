@@ -1,0 +1,35 @@
+name: 'PR: Test'
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'adopt'
+          cache: gradle
+
+      - name: Validate Gradle wrapper
+        uses: gradle/wrapper-validation-action@v3
+
+      - name: Run unit tests
+        uses: gradle/gradle-build-action@v3
+        with:
+          arguments: build
+        env:
+          GITHUB_VERSION: pr${{ github.event.pull_request.number }}
+
+      - name: Artifact output
+        uses: actions/upload-artifact@v4
+        with:
+          name: pluginbase-pr${{ github.event.pull_request.number }}
+          path: "**/build/libs/*-pr${{ github.event.pull_request.number }}.jar"

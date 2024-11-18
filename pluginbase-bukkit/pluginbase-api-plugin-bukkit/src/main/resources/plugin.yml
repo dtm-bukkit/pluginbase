@@ -1,4 +1,4 @@
 name: PluginBaseAPI
 main: pluginbase.plugin.PluginBaseAPI
-version: maven-version-number
+version: ${version}
 author: dumptruckman
