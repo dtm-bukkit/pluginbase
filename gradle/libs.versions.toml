@@ -3,7 +3,7 @@ intellij-annotations = "12.0"
 spigot-api = "1.12-R0.1-SNAPSHOT"
 commons-io = "2.4"
 commons-logging = "1.1.1"
-configurate = "3.7.3"
+configurate = "3.1"
 gentyref = "1.1.0"
 bstats = "2.2.1"
 spring = "3.2.4.RELEASE"
@@ -18,11 +18,11 @@ intellij-annotations = { module = "com.intellij:annotations", version.ref = "int
 spigot-api = { module = "org.spigotmc:spigot-api", version.ref = "spigot-api" }
 commons-io = { module = "commons-io:commons-io", version.ref = "commons-io" }
 commons-logging = { module = "commons-logging:commons-logging", version.ref = "commons-logging" }
-configurate-core = { module = "org.spongepowered:configurate-core", version.ref = "configurate" }
-configurate-hocon = { module = "org.spongepowered:configurate-hocon", version.ref = "configurate" }
-configurate-json = { module = "org.spongepowered:configurate-json", version.ref = "configurate" }
-configurate-gson = { module = "org.spongepowered:configurate-gson", version.ref = "configurate" }
-configurate-yaml = { module = "org.spongepowered:configurate-yaml", version.ref = "configurate" }
+configurate-core = { module = "ninja.leaping.configurate:configurate-core", version.ref = "configurate" }
+configurate-hocon = { module = "ninja.leaping.configurate:configurate-hocon", version.ref = "configurate" }
+configurate-json = { module = "ninja.leaping.configurate:configurate-json", version.ref = "configurate" }
+configurate-gson = { module = "ninja.leaping.configurate:configurate-gson", version.ref = "configurate" }
+configurate-yaml = { module = "ninja.leaping.configurate:configurate-yaml", version.ref = "configurate" }
 gentyref = { module = "com.googlecode.gentyref:gentyref", version.ref = "gentyref" }
 bstats-base = { module = "org.bstats:bstats-base", version.ref = "bstats" }
 bstats-bukkit = { module = "org.bstats:bstats-bukkit", version.ref = "bstats" }
