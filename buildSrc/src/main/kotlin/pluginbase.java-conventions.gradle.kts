@@ -100,12 +100,14 @@ publishing {
     }
     repositories {
         maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/dumptruckman/pluginbase")
-            credentials {
-                username = System.getenv("GITHUB_ACTOR")
-                password = System.getenv("GITHUB_TOKEN")
-            }
+            name = "dumptruckmanReleases"
+            url = uri("https://repo.dumptruckman.com/dumptruckman-releases")
+            credentials(PasswordCredentials::class)
+        }
+        maven {
+            name = "dumptruckmanSnapshots"
+            url = uri("https://repo.dumptruckman.com/dumptruckman-snapshots")
+            credentials(PasswordCredentials::class)
         }
     }
 }
