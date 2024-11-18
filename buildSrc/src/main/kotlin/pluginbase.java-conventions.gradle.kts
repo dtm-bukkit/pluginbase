@@ -87,8 +87,6 @@ publishing {
         create<MavenPublication>("maven") {
             from(components["shadow"])
 
-            artifact(tasks.shadowJar.get())
-
             pom.withXml {
                 val pom = pomxml.Pom(asNode())
                 pom.dependencies.filter { dependency ->
