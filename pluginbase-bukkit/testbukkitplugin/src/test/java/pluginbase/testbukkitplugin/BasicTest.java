@@ -4,7 +4,9 @@ import org.bukkit.Bukkit;
 import org.bukkit.Server;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginDescriptionFile;
+import org.bukkit.plugin.java.JavaPluginLoader;
 import org.junit.Test;
+import org.powermock.core.classloader.annotations.PrepareForTest;
 import pluginbase.config.datasource.DataSource;
 import pluginbase.config.datasource.hocon.HoconDataSource;
 import pluginbase.messages.MessageProvider;
@@ -19,6 +21,7 @@ import java.util.Locale;
 
 import static org.junit.Assert.*;
 
+@PrepareForTest(JavaPluginLoader.class)
 public class BasicTest extends PluginTest {
 
     private Server server = null;

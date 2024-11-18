@@ -6,7 +6,6 @@ import org.jetbrains.annotations.Nullable;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.cglib.core.Local;
 import pluginbase.logging.Logging;
 import pluginbase.logging.PluginLogger;
 

@@ -10,6 +10,7 @@ import org.bukkit.permissions.Permission;
 import org.bukkit.permissions.PermissionDefault;
 import org.bukkit.plugin.*;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.java.JavaPluginLoader;
 import org.powermock.api.mockito.PowerMockito;
 import pluginbase.testingbukkit.FileLocations;
 
@@ -17,6 +18,8 @@ import java.io.File;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.util.*;
+
+import static org.powermock.api.mockito.PowerMockito.when;
 
 public class TestingPluginManager implements PluginManager {
 
@@ -28,15 +31,27 @@ public class TestingPluginManager implements PluginManager {
     private final Map<Boolean, Map<Permissible, Boolean>> defSubs = new HashMap<Boolean, Map<Permissible, Boolean>>();
 
     Server server;
-    PluginLoader pluginLoader;
+    JavaPluginLoader pluginLoader;
 
     public TestingPluginManager(Server server) {
         this.server = server;
 
-        this.pluginLoader = PowerMockito.mock(PluginLoader.class);
+        this.pluginLoader = createPluginLoaderMock(this.server);
 
         defaultPerms.put(true, new HashSet<Permission>());
         defaultPerms.put(false, new HashSet<Permission>());
+    }
+
+    private JavaPluginLoader createPluginLoaderMock(Server server) {
+        JavaPluginLoader pluginLoader = PowerMockito.mock(JavaPluginLoader.class);
+        Field field = PowerMockito.field(JavaPluginLoader.class, "server");
+        field.setAccessible(true);
+        try {
+            field.set(pluginLoader, server);
+        } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
+        return pluginLoader;
     }
 
     @Override
@@ -82,7 +97,7 @@ public class TestingPluginManager implements PluginManager {
     public Plugin loadPlugin(PluginDescriptionFile pdf) {
         try {
             Class<Plugin> clazz = (Class<Plugin>) Class.forName(pdf.getMain());
-            Constructor<Plugin> constructor = clazz.getDeclaredConstructor(PluginLoader.class, Server.class, PluginDescriptionFile.class, File.class, File.class);
+            Constructor<Plugin> constructor = clazz.getDeclaredConstructor(JavaPluginLoader.class, Server.class, PluginDescriptionFile.class, File.class, File.class);
             constructor.setAccessible(true);
             File pluginDir = new File(FileLocations.PLUGIN_DIRECTORY, pdf.getName());
             Plugin plugin = constructor.newInstance(pluginLoader, server, pdf, pluginDir, new File(FileLocations.PLUGIN_DIRECTORY, "pluginTestFile"));

@@ -5,20 +5,13 @@ plugins {
 
 rootProject.name = "pluginbase"
 
-include("pluginbase-core", "pluginbase-bukkit")
-
-fun includeSubmodulesRecursively(moduleDir: File, parentModuleName: String) {
-    moduleDir.listFiles()?.forEach {
-        if (it.isDirectory()) {
-            if (File(it, "build.gradle.kts").exists()) {
-                include("$parentModuleName:${moduleDir.name}:${it.name}")
-            }
-            if (!File(it, "src").exists()) {
-                includeSubmodulesRecursively(it, "$parentModuleName:${moduleDir.name}")
-            }
+fun includeSubmodules(parentDir: File) {
+    parentDir.listFiles()?.forEach {
+        if (it.isDirectory && File(it, "build.gradle.kts").exists()) {
+            include(":${parentDir.name}:${it.name}")
         }
     }
 }
 
-includeSubmodulesRecursively(File(rootDir, "pluginbase-core"), "")
-includeSubmodulesRecursively(File(rootDir, "pluginbase-bukkit"), "")
+includeSubmodules(File(rootDir, "pluginbase-core"))
+includeSubmodules(File(rootDir, "pluginbase-bukkit"))
