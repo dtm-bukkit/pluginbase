@@ -111,15 +111,28 @@ publishing {
 }
 
 
-tasks.named("shadowJar", ShadowJar::class) {
+tasks.shadowJar {
     archiveClassifier.set("")
 }
 
-tasks.named("build") {
+tasks.build {
     dependsOn(tasks.shadowJar)
 }
 
-tasks.named("jar") {
+tasks.jar {
     dependsOn(tasks.shadowJar)
     enabled = false
+}
+
+tasks.processResources {
+    val props = mapOf("version" to project.version)
+    inputs.properties(props)
+    filteringCharset = "UTF-8"
+    filesMatching("plugin.yml") {
+        expand(props)
+    }
+
+    // This task should never be skipped. The tests depend on this having been run but we want the new version number
+    // that is created after tests are run and before we run again to publish.
+    outputs.upToDateWhen { false }
 }
