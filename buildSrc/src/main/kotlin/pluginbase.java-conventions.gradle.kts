@@ -101,13 +101,10 @@ publishing {
     }
     repositories {
         maven {
-            name = "dumptruckmanReleases"
-            url = uri("https://repo.dumptruckman.com/dumptruckman-releases")
-            credentials(PasswordCredentials::class)
-        }
-        maven {
-            name = "dumptruckmanSnapshots"
-            url = uri("https://repo.dumptruckman.com/dumptruckman-snapshots")
+            name = "dumptruckman"
+            val releaseRepoUrl = uri("https://repo.dumptruckman.com/dumptruckman-releases")
+            val snapshotRepoUrl = uri("https://repo.dumptruckman.com/dumptruckman-snapshots")
+            url = uri(if (version.toString().endsWith("SNAPSHOT")) snapshotRepoUrl else releaseRepoUrl)
             credentials(PasswordCredentials::class)
         }
     }

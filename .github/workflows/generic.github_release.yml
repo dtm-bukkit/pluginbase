@@ -71,10 +71,8 @@ jobs:
         with:
           arguments: >
             publish -x test
-              -PdumptruckmanReleasesUsername=${{ secrets.REPOSILITE_REPO_USERNAME }}
-              -PdumptruckmanReleasesPassword=${{ secrets.REPOSILITE_REPO_PASSWORD }}
-              -PdumptruckmanSnapshotsUsername=${{ secrets.REPOSILITE_REPO_USERNAME }}
-              -PdumptruckmanSnapshotsPassword=${{ secrets.REPOSILITE_REPO_PASSWORD }}
+              -PdumptruckmanUsername=${{ secrets.REPOSILITE_REPO_USERNAME }}
+              -PdumptruckmanPassword=${{ secrets.REPOSILITE_REPO_PASSWORD }}
         env:
           GITHUB_VERSION: ${{ steps.release.outputs.publish_version }}
 
