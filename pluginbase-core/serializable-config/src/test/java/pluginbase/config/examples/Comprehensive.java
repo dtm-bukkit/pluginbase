@@ -1,6 +1,7 @@
 package pluginbase.config.examples;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import pluginbase.config.annotation.Comment;
 import pluginbase.config.annotation.Description;
 import pluginbase.config.annotation.HandlePropertyWith;
@@ -16,18 +17,15 @@ import pluginbase.config.properties.PropertiesWrapper;
 import pluginbase.config.properties.PropertyAliases;
 import pluginbase.config.properties.PropertyHandler;
 import pluginbase.config.serializers.CustomSerializer2;
-import org.jetbrains.annotations.Nullable;
 import pluginbase.logging.ObjectStringifier;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
 

@@ -1,8 +1,8 @@
 package pluginbase.bukkit.minecraft;
 
-import pluginbase.minecraft.BasePlayer;
 import org.bukkit.command.CommandSender;
 import org.jetbrains.annotations.NotNull;
+import pluginbase.minecraft.BasePlayer;
 
 /**
  * An abstract implementation of BasePlayer for Bukkit.

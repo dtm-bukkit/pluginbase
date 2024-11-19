@@ -1,23 +1,20 @@
 package pluginbase.bukkit.command;
 
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
-import org.bukkit.command.PluginCommand;
-import org.bukkit.command.TabExecutor;
-import org.bukkit.plugin.Plugin;
-import pluginbase.bukkit.minecraft.BukkitTools;
-import pluginbase.command.CommandException;
-import pluginbase.command.CommandHandler;
 import org.bukkit.Bukkit;
+import org.bukkit.command.Command;
 import org.bukkit.command.CommandMap;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.SimpleCommandMap;
+import org.bukkit.command.TabExecutor;
+import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
+import pluginbase.bukkit.minecraft.BukkitTools;
+import pluginbase.command.CommandException;
+import pluginbase.command.CommandHandler;
 import pluginbase.command.CommandProvider;
 import pluginbase.command.CommandUsageException;
 import pluginbase.minecraft.BasePlayer;
 
-import java.util.Collections;
 import java.util.List;
 
 

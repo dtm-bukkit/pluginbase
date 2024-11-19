@@ -1,7 +1,11 @@
 package pluginbase.testingbukkit;
 
-import org.bukkit.*;
+import org.bukkit.Difficulty;
+import org.bukkit.Location;
+import org.bukkit.World;
 import org.bukkit.World.Environment;
+import org.bukkit.WorldCreator;
+import org.bukkit.WorldType;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.mockito.invocation.InvocationOnMock;
@@ -21,8 +25,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import static org.mockito.Matchers.*;
-import static org.powermock.api.mockito.PowerMockito.*;
+import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.anyBoolean;
+import static org.mockito.Matchers.anyInt;
+import static org.mockito.Matchers.anyLong;
+import static org.powermock.api.mockito.PowerMockito.doAnswer;
+import static org.powermock.api.mockito.PowerMockito.mock;
+import static org.powermock.api.mockito.PowerMockito.when;
 
 public final class WorldFactory {
 

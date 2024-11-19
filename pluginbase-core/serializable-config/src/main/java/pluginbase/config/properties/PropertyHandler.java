@@ -2,7 +2,6 @@ package pluginbase.config.properties;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import pluginbase.config.field.Field;
 import pluginbase.config.field.FieldInstance;
 import pluginbase.config.field.PropertyVetoException;
 

@@ -3,12 +3,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.bukkit.properties;
 
+import org.bukkit.configuration.InvalidConfigurationException;
+import org.jetbrains.annotations.NotNull;
 import pluginbase.logging.Logging;
 import pluginbase.logging.PluginLogger;
 import pluginbase.messages.PluginBaseException;
 import pluginbase.properties.Properties;
-import org.bukkit.configuration.InvalidConfigurationException;
-import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
 import java.io.FileNotFoundException;

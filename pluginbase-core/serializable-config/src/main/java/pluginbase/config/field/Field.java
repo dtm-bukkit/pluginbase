@@ -1,6 +1,8 @@
 package pluginbase.config.field;
 
 import com.googlecode.gentyref.GenericTypeReflector;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import pluginbase.config.annotation.Comment;
 import pluginbase.config.annotation.Description;
 import pluginbase.config.annotation.HandlePropertyWith;
@@ -13,8 +15,6 @@ import pluginbase.config.properties.PropertyHandler;
 import pluginbase.config.properties.PropertyHandlers;
 import pluginbase.config.serializers.Serializer;
 import pluginbase.config.serializers.SerializerSet;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 import pluginbase.config.util.PrimitivesUtil;
 
 import java.lang.reflect.Modifier;

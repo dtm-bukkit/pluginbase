@@ -1,14 +1,13 @@
 package pluginbase.messages.messaging;
 
 import ninja.leaping.configurate.loader.ConfigurationLoader;
+import org.jetbrains.annotations.NotNull;
 import pluginbase.logging.Logging;
 import pluginbase.logging.PluginLogger;
 import pluginbase.messages.LocalizablePlugin;
 import pluginbase.messages.Message;
 import pluginbase.messages.MessageProvider;
-import org.jetbrains.annotations.NotNull;
 
-import java.io.File;
 import java.util.Locale;
 
 public class TestMessagingPlugin implements MessageProvider, Messaging {

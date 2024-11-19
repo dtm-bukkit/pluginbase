@@ -3,12 +3,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.bukkit.permission;
 
-import pluginbase.permission.Perm;
-import pluginbase.permission.PermDefault;
 import org.bukkit.Bukkit;
 import org.bukkit.permissions.Permission;
 import org.bukkit.permissions.PermissionDefault;
 import org.bukkit.plugin.PluginManager;
+import pluginbase.permission.Perm;
+import pluginbase.permission.PermDefault;
 
 import java.util.Map;
 

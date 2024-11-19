@@ -9,8 +9,11 @@ import pluginbase.messages.messaging.TestMessagingPlugin;
 
 import java.util.List;
 
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertNotNull;
+import static junit.framework.Assert.assertTrue;
+import static junit.framework.Assert.fail;
 import static org.mockito.Mockito.mock;
-import static junit.framework.Assert.*;
 
 public class DebugSessionTest {
 

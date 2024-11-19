@@ -1,8 +1,8 @@
 package pluginbase.bukkit;
 
-import pluginbase.plugin.PluginInfo;
 import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
+import pluginbase.plugin.PluginInfo;
 
 class BukkitPluginInfo implements PluginInfo {
 

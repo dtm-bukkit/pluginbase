@@ -2,3 +2,4 @@ name: PluginBaseAPI
 main: pluginbase.plugin.PluginBaseAPI
 version: ${version}
 author: dumptruckman
+api-version: 1.21.1

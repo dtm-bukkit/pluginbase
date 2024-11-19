@@ -13,7 +13,6 @@ import pluginbase.config.properties.PropertiesWrapper;
 import pluginbase.config.serializers.Serializer;
 import pluginbase.config.serializers.SerializerSet;
 import pluginbase.logging.PluginLogger;
-import pluginbase.messages.Message;
 import pluginbase.messages.MessageProvider;
 import pluginbase.plugin.command.builtin.DebugCommand;
 

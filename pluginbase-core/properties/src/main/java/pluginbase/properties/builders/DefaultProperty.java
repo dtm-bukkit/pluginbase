@@ -3,8 +3,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.properties.builders;
 
-import pluginbase.properties.Property;
 import org.jetbrains.annotations.NotNull;
+import pluginbase.properties.Property;
 
 import java.util.Collections;
 import java.util.List;

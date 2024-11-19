@@ -1,15 +1,19 @@
 package pluginbase.config.field;
 
+import org.jetbrains.annotations.NotNull;
 import pluginbase.config.annotation.FauxEnum;
 import pluginbase.config.annotation.IgnoreSuperFields;
-import org.jetbrains.annotations.NotNull;
 import pluginbase.config.annotation.SerializeWith;
 import pluginbase.config.serializers.SerializerSet;
 import pluginbase.config.util.PrimitivesUtil;
 import pluginbase.logging.Logging;
 
 import java.lang.reflect.Modifier;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class FieldMapper {
 

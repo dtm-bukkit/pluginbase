@@ -1,8 +1,8 @@
 package pluginbase.properties;
 
-import pluginbase.logging.PluginLogger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import pluginbase.logging.PluginLogger;
 
 import java.util.ArrayList;
 import java.util.HashMap;

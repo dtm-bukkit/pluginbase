@@ -3,12 +3,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.properties.builders;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import pluginbase.messages.Message;
 import pluginbase.properties.MappedProperty;
 import pluginbase.properties.PropertyValidator;
 import pluginbase.properties.serializers.PropertySerializer;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.HashMap;

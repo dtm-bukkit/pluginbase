@@ -3,10 +3,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.properties;
 
-import pluginbase.logging.PluginLogger;
-import pluginbase.properties.serializers.PropertySerializer;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import pluginbase.logging.PluginLogger;
+import pluginbase.properties.serializers.PropertySerializer;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

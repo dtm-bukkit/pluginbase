@@ -1,12 +1,13 @@
 package pluginbase.config.annotation;
 
+import pluginbase.config.field.Field;
+import pluginbase.config.properties.PropertiesWrapper;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import pluginbase.config.field.Field;
-import pluginbase.config.properties.PropertiesWrapper;
 
 /**
  * Prevents setting of this field via {@link Field#setValue(Object, Object)} but still allows setting via

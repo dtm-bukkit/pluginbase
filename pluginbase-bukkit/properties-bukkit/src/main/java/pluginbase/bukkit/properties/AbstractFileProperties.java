@@ -3,6 +3,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.bukkit.properties;
 
+import org.bukkit.configuration.ConfigurationOptions;
+import org.bukkit.configuration.ConfigurationSection;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import pluginbase.logging.PluginLogger;
 import pluginbase.properties.AbstractProperties;
 import pluginbase.properties.ListProperty;
@@ -17,11 +22,6 @@ import pluginbase.properties.ValueProperty;
 import pluginbase.properties.serializers.DefaultSerializer;
 import pluginbase.properties.serializers.DefaultStringSerializer;
 import pluginbase.properties.serializers.StringStringSerializer;
-import org.bukkit.configuration.ConfigurationOptions;
-import org.bukkit.configuration.ConfigurationSection;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.HashMap;

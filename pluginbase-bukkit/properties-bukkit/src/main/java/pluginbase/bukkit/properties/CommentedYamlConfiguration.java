@@ -3,11 +3,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.bukkit.properties;
 
-import pluginbase.logging.Logging;
-import pluginbase.messages.PluginBaseException;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.jetbrains.annotations.NotNull;
+import pluginbase.logging.Logging;
+import pluginbase.messages.PluginBaseException;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -309,4 +309,3 @@ class CommentedYamlConfiguration extends YamlConfiguration implements CommentedF
         _save(file);
     }
 }
-

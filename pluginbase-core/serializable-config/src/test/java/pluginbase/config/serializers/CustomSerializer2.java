@@ -1,10 +1,9 @@
 package pluginbase.config.serializers;
 
-import pluginbase.config.SerializableConfig;
-import pluginbase.config.examples.Custom;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import pluginbase.config.examples.Custom.Data;
+import pluginbase.config.SerializableConfig;
+import pluginbase.config.examples.Custom;
 
 import java.util.HashMap;
 import java.util.List;

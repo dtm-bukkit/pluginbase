@@ -1,14 +1,15 @@
 package pluginbase.config.serializers;
 
-import pluginbase.config.SerializableConfig;
+import org.junit.Before;
+import org.junit.Test;
 import pluginbase.config.TestBase;
 import pluginbase.config.examples.Comprehensive;
 import pluginbase.config.examples.Custom;
 import pluginbase.config.examples.Unknown;
-import org.junit.Before;
-import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
 
 public class DefaultSerializerTest extends TestBase {
 

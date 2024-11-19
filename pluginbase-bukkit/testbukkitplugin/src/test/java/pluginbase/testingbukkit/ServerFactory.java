@@ -1,7 +1,11 @@
 package pluginbase.testingbukkit;
 
-import org.bukkit.*;
+import org.bukkit.GameMode;
+import org.bukkit.OfflinePlayer;
+import org.bukkit.Server;
+import org.bukkit.World;
 import org.bukkit.World.Environment;
+import org.bukkit.WorldCreator;
 import org.bukkit.entity.Player;
 import org.bukkit.help.HelpMap;
 import org.bukkit.plugin.ServicesManager;
@@ -20,8 +24,14 @@ import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
 
-import static org.mockito.Matchers.*;
-import static org.powermock.api.mockito.PowerMockito.*;
+import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.anyBoolean;
+import static org.mockito.Matchers.anyInt;
+import static org.mockito.Matchers.anyString;
+import static org.powermock.api.mockito.PowerMockito.doAnswer;
+import static org.powermock.api.mockito.PowerMockito.doReturn;
+import static org.powermock.api.mockito.PowerMockito.mock;
+import static org.powermock.api.mockito.PowerMockito.when;
 
 public final class ServerFactory {
 
@@ -68,8 +78,7 @@ public final class ServerFactory {
         when(server.getPort()).thenReturn(25565);
         when(server.getViewDistance()).thenReturn(15);
         when(server.getIp()).thenReturn("127.0.0.1");
-        when(server.getServerName()).thenReturn("MockBukkit");
-        when(server.getServerId()).thenReturn("1");
+        when(server.getName()).thenReturn("MockBukkit");
         when(server.getWorldType()).thenReturn("DEFAULT");
         when(server.getGenerateStructures()).thenReturn(true);
         doAnswer(new SetterAnswer<Boolean>() {

@@ -5,7 +5,6 @@ import org.jetbrains.annotations.NotNull;
 import pluginbase.messages.LocalizablePlugin;
 import pluginbase.messages.Messages;
 
-import java.io.File;
 import java.util.Locale;
 
 /**

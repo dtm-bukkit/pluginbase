@@ -4,12 +4,10 @@
 package pluginbase.messages;
 
 import ninja.leaping.configurate.loader.ConfigurationLoader;
-import pluginbase.logging.Logging;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import pluginbase.logging.PluginLogger;
+import pluginbase.logging.Logging;
 
-import java.io.File;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.HashMap;
@@ -164,4 +162,3 @@ public class Messages {
         return new DefaultMessageProvider(localizablePlugin, loader, locale);
     }
 }
-

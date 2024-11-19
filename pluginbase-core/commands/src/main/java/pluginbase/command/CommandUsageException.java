@@ -1,8 +1,8 @@
 package pluginbase.command;
 
+import org.jetbrains.annotations.NotNull;
 import pluginbase.messages.BundledMessage;
 import pluginbase.messages.PluginBaseException;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 

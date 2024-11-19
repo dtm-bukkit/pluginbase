@@ -3,10 +3,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.command;
 
-import pluginbase.messages.BundledMessage;
-import pluginbase.messages.Message;
-import pluginbase.minecraft.BasePlayer;
 import org.jetbrains.annotations.NotNull;
+import pluginbase.messages.BundledMessage;
+import pluginbase.minecraft.BasePlayer;
 import pluginbase.util.time.Duration;
 
 /**

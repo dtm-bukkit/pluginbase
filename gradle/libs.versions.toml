@@ -1,6 +1,6 @@
 [versions]
 intellij-annotations = "12.0"
-spigot-api = "1.12-R0.1-SNAPSHOT"
+spigot-api = "1.21.1-R0.1-SNAPSHOT"
 commons-io = "2.4"
 commons-logging = "1.1.1"
 configurate = "3.1"

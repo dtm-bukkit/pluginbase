@@ -5,7 +5,6 @@ import org.jetbrains.annotations.Nullable;
 import pluginbase.messages.Message;
 import pluginbase.messages.Theme;
 import pluginbase.messages.messaging.MessageReceiver;
-import pluginbase.messages.messaging.MessagerDebugSubscription;
 import pluginbase.messages.messaging.Messaging;
 
 import java.util.HashMap;

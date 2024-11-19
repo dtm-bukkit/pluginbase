@@ -4,18 +4,20 @@
 package pluginbase.messages.messaging;
 
 import ninja.leaping.configurate.loader.ConfigurationLoader;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import pluginbase.logging.PluginLogger;
 import pluginbase.messages.BundledMessage;
 import pluginbase.messages.LocalizablePlugin;
 import pluginbase.messages.Message;
 import pluginbase.messages.MessageProvider;
 import pluginbase.messages.Messages;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
-import java.io.File;
 import java.lang.ref.WeakReference;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
 
 /**
  * This interface describes a Messager which sends localized messages to {@link MessageReceiver}s.
@@ -274,4 +276,3 @@ public class Messager implements MessageProvider {
         return broadcast != null && broadcast.cancelSubscription(subscription);
     }
 }
-

@@ -3,9 +3,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.properties.serializers;
 
-import pluginbase.logging.Logging;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import pluginbase.logging.Logging;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

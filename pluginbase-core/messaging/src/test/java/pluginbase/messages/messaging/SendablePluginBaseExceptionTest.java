@@ -1,9 +1,5 @@
 package pluginbase.messages.messaging;
 
-import pluginbase.messages.BundledMessage;
-import pluginbase.messages.Message;
-import pluginbase.messages.Messages;
-import pluginbase.messages.PluginBaseException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,9 +8,17 @@ import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 import org.powermock.core.MockGateway;
 import org.powermock.modules.junit4.PowerMockRunner;
+import pluginbase.messages.BundledMessage;
+import pluginbase.messages.Message;
+import pluginbase.messages.Messages;
+import pluginbase.messages.PluginBaseException;
 
 import static junit.framework.Assert.assertTrue;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.anyString;
+import static org.mockito.Mockito.doAnswer;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.spy;
 
 @RunWith(PowerMockRunner.class)
 public class SendablePluginBaseExceptionTest {

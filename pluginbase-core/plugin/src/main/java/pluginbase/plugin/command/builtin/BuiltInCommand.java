@@ -1,11 +1,10 @@
 package pluginbase.plugin.command.builtin;
 
+import org.jetbrains.annotations.NotNull;
 import pluginbase.command.Command;
 import pluginbase.command.CommandContext;
-import pluginbase.command.CommandProvider;
 import pluginbase.minecraft.BasePlayer;
 import pluginbase.plugin.PluginBase;
-import org.jetbrains.annotations.NotNull;
 
 /**
  * A simple base class for built in commands for the Plugin module. Your own commands should probably NOT extend this.

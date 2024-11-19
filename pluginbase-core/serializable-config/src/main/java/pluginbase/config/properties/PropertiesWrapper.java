@@ -1,14 +1,13 @@
 package pluginbase.config.properties;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import pluginbase.config.annotation.Immutable;
 import pluginbase.config.field.Field;
 import pluginbase.config.field.FieldInstance;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 import pluginbase.config.field.FieldMap;
 import pluginbase.config.field.FieldMapper;
 import pluginbase.config.field.PropertyVetoException;
-import pluginbase.messages.Message;
 
 import java.util.Deque;
 import java.util.LinkedList;

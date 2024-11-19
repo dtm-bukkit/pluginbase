@@ -1,12 +1,12 @@
 package pluginbase.config.properties;
 
+import org.junit.Test;
 import pluginbase.config.TestBase;
 import pluginbase.config.examples.Comprehensive;
 import pluginbase.config.field.Field;
 import pluginbase.config.field.FieldMap;
 import pluginbase.config.field.FieldMapper;
 import pluginbase.config.field.Validator;
-import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

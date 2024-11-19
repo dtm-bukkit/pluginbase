@@ -5,7 +5,7 @@ import pluginbase.config.TestBase;
 import pluginbase.config.examples.Anum;
 import pluginbase.config.examples.Comprehensive;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class FieldTest extends TestBase {
 

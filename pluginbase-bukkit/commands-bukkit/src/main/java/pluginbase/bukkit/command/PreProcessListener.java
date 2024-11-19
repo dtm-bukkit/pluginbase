@@ -1,6 +1,5 @@
 package pluginbase.bukkit.command;
 
-import pluginbase.command.CommandProvider;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -8,6 +7,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.event.server.ServerCommandEvent;
 import org.jetbrains.annotations.NotNull;
+import pluginbase.command.CommandProvider;
 
 // Unused currently... Need to determine if needed.
 class PreProcessListener implements Listener {

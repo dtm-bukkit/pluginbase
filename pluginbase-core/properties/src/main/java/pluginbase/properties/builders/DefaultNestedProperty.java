@@ -3,9 +3,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.properties.builders;
 
+import org.jetbrains.annotations.NotNull;
 import pluginbase.properties.NestedProperties;
 import pluginbase.properties.NestedProperty;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 

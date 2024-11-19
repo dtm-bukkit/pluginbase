@@ -3,10 +3,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.properties.builders;
 
-import pluginbase.properties.NestedProperties;
-import pluginbase.properties.Property;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import pluginbase.properties.NestedProperties;
+import pluginbase.properties.Property;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,9 +1,9 @@
 package pluginbase.command;
 
+import org.jetbrains.annotations.NotNull;
 import pluginbase.messages.BundledMessage;
 import pluginbase.messages.PluginBaseException;
 import pluginbase.messages.messaging.SendablePluginBaseException;
-import org.jetbrains.annotations.NotNull;
 
 /**
  * Used when commands throw exceptions.

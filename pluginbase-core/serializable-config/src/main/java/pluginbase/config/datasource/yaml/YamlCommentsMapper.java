@@ -1,9 +1,9 @@
 package pluginbase.config.datasource.yaml;
 
+import org.jetbrains.annotations.NotNull;
 import pluginbase.config.field.Field;
 import pluginbase.config.field.FieldMap;
 import pluginbase.config.field.FieldMapper;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Map;
 
