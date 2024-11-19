@@ -7,7 +7,7 @@ plugins {
 repositories {
     maven {
         name = "spigotmc"
-        url = uri("https://hub.spigotmc.org/nexus/content/groups/public/")
+        url = uri("https://hub.spigotmc.org/nexus/repository/public/")
     }
 }
 
