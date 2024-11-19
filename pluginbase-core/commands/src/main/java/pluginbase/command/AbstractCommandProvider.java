@@ -7,7 +7,6 @@ import pluginbase.logging.PluginLogger;
 import pluginbase.messages.messaging.Messager;
 import pluginbase.messages.messaging.MessagerFactory;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

@@ -3,10 +3,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.messages;
 
-import pluginbase.logging.Formatter;
-import pluginbase.logging.PluginLogger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import pluginbase.logging.Formatter;
+import pluginbase.logging.PluginLogger;
 
 import java.util.logging.Level;
 

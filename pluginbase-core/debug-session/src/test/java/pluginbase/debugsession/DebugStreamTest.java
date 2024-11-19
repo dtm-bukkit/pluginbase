@@ -7,7 +7,7 @@ import pluginbase.messages.messaging.MessageReceiver;
 import static junit.framework.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.fail;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.mock;
 
 public class DebugStreamTest {
 

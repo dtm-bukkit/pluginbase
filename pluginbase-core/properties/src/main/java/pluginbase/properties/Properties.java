@@ -3,9 +3,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.properties;
 
-import pluginbase.messages.PluginBaseException;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import pluginbase.messages.PluginBaseException;
 
 import java.util.List;
 import java.util.Map;

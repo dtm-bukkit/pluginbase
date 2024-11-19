@@ -3,11 +3,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.minecraft;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import pluginbase.messages.messaging.MessageReceiver;
 import pluginbase.permission.Perm;
 import pluginbase.permission.Permissible;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Represents a player/user currently on a Minecraft server.

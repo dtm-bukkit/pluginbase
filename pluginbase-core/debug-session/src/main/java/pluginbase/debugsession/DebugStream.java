@@ -2,7 +2,6 @@ package pluginbase.debugsession;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.io.OutputStream;
 import java.io.PrintStream;
 import java.util.HashSet;
 import java.util.Set;

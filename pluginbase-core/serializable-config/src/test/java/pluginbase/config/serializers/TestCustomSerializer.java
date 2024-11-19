@@ -1,13 +1,14 @@
 package pluginbase.config.serializers;
 
+import org.junit.Test;
 import pluginbase.config.TestBase;
 import pluginbase.config.examples.Comprehensive;
 import pluginbase.config.field.Field;
 import pluginbase.config.field.FieldMap;
 import pluginbase.config.field.FieldMapper;
-import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class TestCustomSerializer extends TestBase {
 

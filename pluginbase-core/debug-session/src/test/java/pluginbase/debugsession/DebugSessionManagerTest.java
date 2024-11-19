@@ -5,7 +5,12 @@ import org.junit.Test;
 import pluginbase.messages.messaging.MessageReceiver;
 import pluginbase.messages.messaging.TestMessagingPlugin;
 
-import static junit.framework.Assert.*;
+import static junit.framework.Assert.assertFalse;
+import static junit.framework.Assert.assertNotNull;
+import static junit.framework.Assert.assertNull;
+import static junit.framework.Assert.assertSame;
+import static junit.framework.Assert.assertTrue;
+import static junit.framework.Assert.fail;
 import static org.mockito.Mockito.mock;
 
 public class DebugSessionManagerTest {

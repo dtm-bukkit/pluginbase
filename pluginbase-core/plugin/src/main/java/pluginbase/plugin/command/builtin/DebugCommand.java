@@ -3,6 +3,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.plugin.command.builtin;
 
+import org.jetbrains.annotations.NotNull;
 import pluginbase.command.CommandContext;
 import pluginbase.command.CommandInfo;
 import pluginbase.messages.Message;
@@ -12,7 +13,6 @@ import pluginbase.minecraft.BasePlayer;
 import pluginbase.permission.Perm;
 import pluginbase.permission.PermFactory;
 import pluginbase.plugin.PluginBase;
-import org.jetbrains.annotations.NotNull;
 
 /**
  * Enables debug-information.

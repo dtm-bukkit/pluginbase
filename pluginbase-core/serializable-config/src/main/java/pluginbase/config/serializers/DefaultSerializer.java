@@ -8,7 +8,6 @@ import pluginbase.config.annotation.SerializableAs;
 import pluginbase.config.field.Field;
 import pluginbase.config.field.FieldMap;
 import pluginbase.config.field.FieldMapper;
-import pluginbase.config.field.PropertyVetoException;
 
 import java.lang.reflect.Modifier;
 import java.util.Collection;

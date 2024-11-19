@@ -1,9 +1,9 @@
 package pluginbase.testplugin;
 
-import pluginbase.testplugin.pie.Pie;
-import pluginbase.testplugin.pie.PieListSerializer;
 import pluginbase.config.annotation.SerializeWith;
 import pluginbase.plugin.Settings;
+import pluginbase.testplugin.pie.Pie;
+import pluginbase.testplugin.pie.PieListSerializer;
 
 import java.util.ArrayList;
 import java.util.List;

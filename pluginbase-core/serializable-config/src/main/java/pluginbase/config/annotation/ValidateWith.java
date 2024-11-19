@@ -1,7 +1,7 @@
 package pluginbase.config.annotation;
 
-import pluginbase.config.field.Validator;
 import pluginbase.config.field.Field;
+import pluginbase.config.field.Validator;
 import pluginbase.config.properties.Properties;
 
 import java.lang.annotation.Documented;

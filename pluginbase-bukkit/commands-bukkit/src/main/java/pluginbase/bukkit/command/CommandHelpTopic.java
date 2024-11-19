@@ -1,11 +1,11 @@
 package pluginbase.bukkit.command;
 
-import pluginbase.messages.Message;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.help.GenericCommandHelpTopic;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import pluginbase.messages.Message;
 
 class CommandHelpTopic extends GenericCommandHelpTopic {
 

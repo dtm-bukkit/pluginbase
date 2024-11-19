@@ -1,12 +1,21 @@
 package pluginbase.config.field;
 
+import org.junit.Test;
 import pluginbase.config.TestBase;
-import pluginbase.config.examples.*;
+import pluginbase.config.examples.Child;
+import pluginbase.config.examples.Comprehensive;
+import pluginbase.config.examples.Custom;
+import pluginbase.config.examples.Parent;
+import pluginbase.config.examples.Recursive;
+import pluginbase.config.examples.Simple;
 import pluginbase.config.serializers.CustomSerializer;
 import pluginbase.config.serializers.CustomSerializer2;
-import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 public class FieldMapperTest extends TestBase {
 

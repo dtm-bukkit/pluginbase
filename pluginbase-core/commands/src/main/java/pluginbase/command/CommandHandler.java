@@ -1,5 +1,6 @@
 package pluginbase.command;
 
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import pluginbase.logging.PluginLogger;
 import pluginbase.messages.BundledMessage;
@@ -8,7 +9,6 @@ import pluginbase.messages.Messages;
 import pluginbase.messages.Theme;
 import pluginbase.messages.messaging.SendablePluginBaseException;
 import pluginbase.minecraft.BasePlayer;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Arrays;

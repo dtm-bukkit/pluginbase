@@ -8,7 +8,6 @@ import pluginbase.messages.LocalizablePlugin;
 import pluginbase.messages.Message;
 import pluginbase.messages.MessageProvider;
 
-import java.io.File;
 import java.util.Locale;
 
 public class TestMessagingPlugin implements MessageProvider, Messaging {

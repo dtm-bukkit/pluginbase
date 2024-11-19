@@ -19,7 +19,9 @@ import java.io.File;
 import java.lang.reflect.Field;
 import java.util.Locale;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertSame;
 
 @PrepareForTest(JavaPluginLoader.class)
 public class BasicTest extends PluginTest {

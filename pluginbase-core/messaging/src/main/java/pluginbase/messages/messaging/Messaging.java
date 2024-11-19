@@ -7,7 +7,6 @@ import ninja.leaping.configurate.loader.ConfigurationLoader;
 import org.jetbrains.annotations.NotNull;
 import pluginbase.messages.LocalizablePlugin;
 
-import java.io.File;
 import java.util.Locale;
 
 /**

@@ -1,15 +1,15 @@
 package pluginbase.bukkit.minecraft;
 
-import pluginbase.logging.Logging;
-import pluginbase.minecraft.Entity;
-import pluginbase.minecraft.location.EntityCoordinates;
-import pluginbase.minecraft.location.Locations;
-import pluginbase.minecraft.location.Vector;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
+import pluginbase.logging.Logging;
+import pluginbase.minecraft.Entity;
+import pluginbase.minecraft.location.EntityCoordinates;
+import pluginbase.minecraft.location.Locations;
+import pluginbase.minecraft.location.Vector;
 
 /**
  * BasePlayer implementation for a Bukkit Player.

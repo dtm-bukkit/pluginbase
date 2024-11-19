@@ -1,8 +1,8 @@
 package pluginbase.plugin;
 
-import pluginbase.minecraft.BasePlayer;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import pluginbase.minecraft.BasePlayer;
 
 import java.io.File;
 

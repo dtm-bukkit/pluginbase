@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import java.util.logging.Level;
 
-import static junit.framework.Assert.*;
+import static junit.framework.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.fail;
 import static org.mockito.Mockito.mock;

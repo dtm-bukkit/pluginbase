@@ -1,7 +1,7 @@
 package pluginbase.config;
 
-import pluginbase.config.examples.Comprehensive;
 import org.junit.Before;
+import pluginbase.config.examples.Comprehensive;
 
 public class TestBase {
 

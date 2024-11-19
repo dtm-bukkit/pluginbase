@@ -1,12 +1,12 @@
 package pluginbase.command;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import pluginbase.messages.BundledMessage;
 import pluginbase.messages.Message;
 import pluginbase.messages.messaging.Messager;
 import pluginbase.minecraft.BasePlayer;
 import pluginbase.permission.Perm;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.Collections;
 import java.util.List;

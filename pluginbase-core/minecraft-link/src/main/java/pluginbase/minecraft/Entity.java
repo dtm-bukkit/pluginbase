@@ -1,9 +1,9 @@
 package pluginbase.minecraft;
 
+import org.jetbrains.annotations.NotNull;
 import pluginbase.messages.messaging.MessageReceiver;
 import pluginbase.minecraft.location.EntityCoordinates;
 import pluginbase.minecraft.location.Vector;
-import org.jetbrains.annotations.NotNull;
 import pluginbase.permission.Permissible;
 
 /**

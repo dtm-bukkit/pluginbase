@@ -3,8 +3,10 @@ package pluginbase.messages.messaging;
 import org.junit.Before;
 import org.junit.Test;
 
-import static junit.framework.Assert.*;
-import static org.mockito.Mockito.*;
+import static junit.framework.Assert.assertFalse;
+import static junit.framework.Assert.assertTrue;
+import static junit.framework.Assert.fail;
+import static org.mockito.Mockito.mock;
 
 public class MessagerDebugBroadcastTest {
 

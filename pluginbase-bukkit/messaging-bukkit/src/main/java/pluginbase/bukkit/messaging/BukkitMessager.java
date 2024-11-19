@@ -4,6 +4,11 @@
 package pluginbase.bukkit.messaging;
 
 import ninja.leaping.configurate.loader.ConfigurationLoader;
+import org.bukkit.command.CommandSender;
+import org.bukkit.command.ConsoleCommandSender;
+import org.bukkit.util.ChatPaginator;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import pluginbase.messages.BundledMessage;
 import pluginbase.messages.LocalizablePlugin;
 import pluginbase.messages.Message;
@@ -11,13 +16,7 @@ import pluginbase.messages.MessageProvider;
 import pluginbase.messages.Messages;
 import pluginbase.messages.messaging.MessageReceiver;
 import pluginbase.messages.messaging.Messager;
-import org.bukkit.command.CommandSender;
-import org.bukkit.command.ConsoleCommandSender;
-import org.bukkit.util.ChatPaginator;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
-import java.io.File;
 import java.util.List;
 import java.util.Locale;
 
@@ -129,4 +128,3 @@ public class BukkitMessager extends Messager {
         getLog().info(getLocalizedMessage(message, args));
     }
 }
-

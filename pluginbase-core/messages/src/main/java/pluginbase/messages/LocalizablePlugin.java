@@ -4,8 +4,6 @@
 package pluginbase.messages;
 
 import pluginbase.logging.LogProvider;
-import pluginbase.logging.PluginLogger;
-import org.jetbrains.annotations.NotNull;
 
 /**
  * A marker interface used to indicate a plugin that will be using localizable messages.

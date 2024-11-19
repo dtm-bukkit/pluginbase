@@ -7,8 +7,8 @@ package pluginbase.config.datasource.yaml;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static pluginbase.config.datasource.yaml.YamlFileCommentInstrumenter.LINE_SEPARATOR;
-import static org.junit.Assert.*;
 
 public class YamlFileCommentInstrumenterTest {
 

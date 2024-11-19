@@ -13,7 +13,7 @@ import pluginbase.config.examples.Parent;
 
 import java.io.File;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class ConfigDataSourceTest extends TestBase {
 

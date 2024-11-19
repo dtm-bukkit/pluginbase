@@ -1,10 +1,10 @@
 package pluginbase.bukkit.properties;
 
-import pluginbase.logging.PluginLogger;
-import pluginbase.properties.NestedProperties;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.jetbrains.annotations.NotNull;
+import pluginbase.logging.PluginLogger;
+import pluginbase.properties.NestedProperties;
 
 class NestedFileProperties extends AbstractFileProperties implements NestedProperties {
 

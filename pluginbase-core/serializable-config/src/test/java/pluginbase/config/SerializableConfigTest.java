@@ -2,6 +2,7 @@ package pluginbase.config;
 
 import com.fasterxml.jackson.core.JsonGenerator.Feature;
 import org.junit.Before;
+import org.junit.Test;
 import pluginbase.config.datasource.DataSource;
 import pluginbase.config.datasource.gson.GsonDataSource;
 import pluginbase.config.datasource.hocon.HoconDataSource;
@@ -14,7 +15,6 @@ import pluginbase.config.examples.FakeEnum;
 import pluginbase.config.examples.NullContainer;
 import pluginbase.config.examples.Parent;
 import pluginbase.config.examples.Unknown;
-import org.junit.Test;
 import pluginbase.config.field.FieldMap;
 import pluginbase.config.field.FieldMapper;
 import pluginbase.config.serializers.CustomSerializer;
@@ -28,7 +28,6 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -37,7 +36,9 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.fail;
 
 public class SerializableConfigTest extends TestBase {
 

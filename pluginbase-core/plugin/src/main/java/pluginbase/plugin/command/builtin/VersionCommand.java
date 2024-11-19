@@ -3,6 +3,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.plugin.command.builtin;
 
+import org.jetbrains.annotations.NotNull;
 import pluginbase.command.CommandContext;
 import pluginbase.command.CommandInfo;
 import pluginbase.messages.Message;
@@ -13,7 +14,6 @@ import pluginbase.permission.PermFactory;
 import pluginbase.plugin.PluginBase;
 import pluginbase.util.webpaste.BitlyURLShortener;
 import pluginbase.util.webpaste.URLShortener;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.LinkedHashSet;
 import java.util.List;

@@ -4,6 +4,8 @@
 package pluginbase.plugin;
 
 import ninja.leaping.configurate.loader.ConfigurationLoader;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import pluginbase.command.Command;
 import pluginbase.command.CommandHandler;
 import pluginbase.command.CommandProvider;
@@ -17,8 +19,6 @@ import pluginbase.messages.MessageUtil;
 import pluginbase.messages.messaging.Messager;
 import pluginbase.messages.messaging.Messaging;
 import pluginbase.messages.messaging.SendablePluginBaseException;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 import pluginbase.permission.PermFactory;
 import pluginbase.plugin.command.builtin.VersionCommand;
 import pluginbase.plugin.util.GsonLanguage;

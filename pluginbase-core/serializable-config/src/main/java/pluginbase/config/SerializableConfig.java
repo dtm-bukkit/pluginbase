@@ -1,13 +1,15 @@
 package pluginbase.config;
 
-import pluginbase.config.annotation.SerializableAs;
-import pluginbase.config.serializers.*;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import pluginbase.config.annotation.SerializableAs;
+import pluginbase.config.serializers.Serializer;
+import pluginbase.config.serializers.SerializerSet;
 import pluginbase.config.util.PrimitivesUtil;
 import pluginbase.logging.Logging;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * A singleton used to serialize and deserialize objects to take advantage of all the features provided by

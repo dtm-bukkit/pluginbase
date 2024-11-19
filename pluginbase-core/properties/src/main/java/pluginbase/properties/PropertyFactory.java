@@ -3,14 +3,14 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.properties;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import pluginbase.properties.builders.ListPropertyBuilder;
 import pluginbase.properties.builders.MappedPropertyBuilder;
 import pluginbase.properties.builders.NestedPropertyBuilder;
 import pluginbase.properties.builders.NullPropertyBuilder;
 import pluginbase.properties.builders.PropertyBuilder;
 import pluginbase.properties.builders.SimplePropertyBuilder;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Map;

@@ -3,12 +3,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package pluginbase.messages.messaging;
 
-import pluginbase.messages.BundledMessage;
-import pluginbase.messages.Message;
-import pluginbase.messages.Messages;
-import pluginbase.messages.PluginBaseException;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import pluginbase.messages.BundledMessage;
+import pluginbase.messages.Messages;
+import pluginbase.messages.PluginBaseException;
 
 /**
  * A extension of the basic {@link PluginBaseException} that adds ease of use methods for sending the exception to
