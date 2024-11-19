@@ -2,3 +2,4 @@ name: TestPluginBase
 main: pluginbase.testbukkitplugin.TestPlugin
 version: ${version}
 author: dumptruckman
+api-version: 1.21.1

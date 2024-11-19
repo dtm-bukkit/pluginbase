@@ -78,8 +78,7 @@ public final class ServerFactory {
         when(server.getPort()).thenReturn(25565);
         when(server.getViewDistance()).thenReturn(15);
         when(server.getIp()).thenReturn("127.0.0.1");
-        when(server.getServerName()).thenReturn("MockBukkit");
-        when(server.getServerId()).thenReturn("1");
+        when(server.getName()).thenReturn("MockBukkit");
         when(server.getWorldType()).thenReturn("DEFAULT");
         when(server.getGenerateStructures()).thenReturn(true);
         doAnswer(new SetterAnswer<Boolean>() {

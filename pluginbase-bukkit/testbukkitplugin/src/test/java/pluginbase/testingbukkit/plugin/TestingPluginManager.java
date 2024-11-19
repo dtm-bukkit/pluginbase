@@ -18,6 +18,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.UnknownDependencyException;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.JavaPluginLoader;
+import org.jetbrains.annotations.NotNull;
 import org.powermock.api.mockito.PowerMockito;
 import pluginbase.testingbukkit.FileLocations;
 
@@ -133,6 +134,12 @@ public class TestingPluginManager implements PluginManager {
 
     @Override
     public Plugin[] loadPlugins(File file) {
+        return new Plugin[0];
+    }
+
+    @NotNull
+    @Override
+    public Plugin[] loadPlugins(@NotNull File[] files) {
         return new Plugin[0];
     }
 
